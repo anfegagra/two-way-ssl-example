@@ -1,0 +1,13 @@
+server:
+  port: 9002
+  ssl:
+    enabled: true
+    client-auth: need
+    key-store: classpath:server-ms.jks
+    key-store-password: server
+    key-alias: server-ms
+    key-store-type: JKS
+    key-store-provider: SUN
+    trust-store: classpath:server-ms.jks
+    trust-store-password: server
+    trust-store-type: JKS

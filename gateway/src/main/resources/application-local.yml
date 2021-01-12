@@ -1,0 +1,13 @@
+server:
+  port: 9001
+  ssl:
+    enabled: true
+    client-auth: want
+    key-store: classpath:certs/gateway-ms.jks
+    key-store-password: gateway
+    key-alias: gateway-ms
+    key-store-type: JKS
+    key-store-provider: SUN
+    trust-store: classpath:certs/gateway-ms.jks
+    trust-store-password: gateway
+    trust-store-type: JKS

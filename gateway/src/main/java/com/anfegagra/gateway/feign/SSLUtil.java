@@ -18,7 +18,7 @@ public class SSLUtil {
 
 		try {
 			KeyStore keyStore = KeyStore.getInstance(KEY_STORE_TYPE_JKS);
-			ClassPathResource classPathResource = new ClassPathResource(jksPath);
+			ClassPathResource classPathResource = new ClassPathResource(jksPath.substring(10));
 			inputStream = classPathResource.getInputStream();
 			keyStore.load(inputStream, jksPass.toCharArray());
 

@@ -9,11 +9,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class SSLFeignConfiguration {
 
-//	@Value("${client.ssl.key-store-path}")
 	@Value("${server.ssl.key-store}")
 	private String clientKeyStorePath;
 
-//	@Value("${client.ssl.key-store-pass}")
 	@Value("${server.ssl.key-store-password}")
 	private String clientKeyStorePass;
 
